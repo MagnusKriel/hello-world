@@ -50,7 +50,7 @@ $(document).ready(function () {
                 $('#ptc' + i).children("#person").html(person + " &nbsp;&nbsp;&nbsp;&nbsp;(" + allThoughts[p].PostTime.substring(0, 16) + ")");
             else
                 $('#ptc' + i).children("#person").html(person + " &nbsp;&nbsp;&nbsp;&nbsp;(" + allThoughts[p].FormattedDate + ")");
-            $('#ptc' + i).children("#message").html(message);
+            $('#ptc' + i).children("#message").text(message);
             i++;
         }
     });
